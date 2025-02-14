@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>digite 1 numero</h2>
+    <input id="numero1" type="text">
+    <h2>digite o 2 numero</h2>
+    <input id="numero2" type="text">
+
+    <button id="ck">Calcular</button>
+
+
+    <Script>
+
+let calcular = document.getElementById('ck')
+
+calcular.addEventListener('click', () => {
+    let num1 =document.getElementById('numero1').value
+    let num2 =document.getElementById('numero2').value
+
+let n1 = Number(num1)
+let n2 = Number(num2)
+
+    let re = n1 + n2
+    alert(re)
+})
+
+
+
+  
+    //    var r1= window.prompt('digite um numero')
+    //    var r2= window.prompt('digite o segundo numero')
+    //    var num1 = parseFloat(r1)
+    //    var num2 = parseFloat(r2)
+    //    window.alert(num1+num2)
+    </Script>
+</body>
+</html>

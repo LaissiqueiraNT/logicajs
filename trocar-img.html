@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #imgDesligada{
+            display: block;
+            width: 70px;
+        }
+        #imgLigada{
+            display: none;
+            width: 86px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/desligada.jpg" id="imgDesligada">
+    <img src="./img/ligada.jpg" id="imgLigada">
+    <button id="bt">Ligar</button>
+    <button id="bt2">Desligar</button>
+    <script>
+        const imgD = document.getElementById('imgDesligada');
+        const imgL = document.getElementById('imgLigada');
+        let button = document.getElementById('bt');
+        let button2 = document.getElementById('bt2');
+        button.addEventListener('click',() => {
+            imgL.style.display='block';
+            imgD.style.display='none';
+        })
+        button2.addEventListener('click',() => {
+            imgL.style.display='none';
+            imgD.style.display='block';
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #class{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #botao{
+            transition: transform 0.3s ease;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 20px;
+             position: absolute;
+        }
+        #botao2:hover{
+            background-color: rgb(163, 163, 163);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="class">
+<button id="botao">Teste</button>
+
+</div>
+
+    <script>
+const button = document.getElementById('botao');
+
+//TESTE 1 
+
+// button.addEventListener('mouseover', () =>{
+//     const x = Math.random() * (window.innerWidth - button.offsetWidth);
+//     const y = Math.random() * (window.innerHeight - button.offsetHeight);
+//     button.style.right= `${x}px`;
+//     button.style.top= `${y}px`;
+// });
+
+//TESTE 2
+
+// button.addEventListener('mouseover', function(){
+//     button.style.transform= 'scale(1.2) ';
+// });
+// button.addEventListener('mouseout', function(){
+//     button.style.transform= 'scale(1) ';
+// });
+
+
+    </script>
+</body>
+</html>
